@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Chat Application</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="Profile Picture">
+            <div class="contact-info">
+                <h2>Maya</h2>
+                <p>Last seen: Just now</p>
+            </div>
+            <div class="call-icons">
+                <i class="fas fa-video"></i>
+                <i class="fas fa-phone-alt"></i>
+            </div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be dynamically added here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
